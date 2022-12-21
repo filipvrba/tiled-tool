@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+ROOT = File.expand_path("../..", __FILE__)
+ROOT_L = File.join(ROOT, 'lib')
+ROOT_A = File.join(ROOT, 'app')
+
+$: << ROOT_L
+require File.join(ROOT_A, "main.rb")
